@@ -1,0 +1,7 @@
+# ignore all
+*
+
+# except
+!logging.go
+!README.md
+!.gitignore
