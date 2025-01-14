@@ -8,7 +8,7 @@ import (
 )
 
 // Start logging via log package; creates log file as '<appName>_<mm.dd.YYYY>.log'
-func StartLogging(fileName, logDirPath string, logsToKeep int) (*os.File, error) {
+func StartLogging(fileName, logDirPath string) (*os.File, error) {
 	// create log dir
 	if err := os.MkdirAll(logDirPath, os.ModePerm); err != nil {
 		return nil, fmt.Errorf("failed to create log dir %s:\n\t%v", logDirPath, err)
